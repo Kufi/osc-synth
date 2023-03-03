@@ -1,0 +1,251 @@
+body{
+    display: flex;
+    background-image: linear-gradient(to top , rgb(11, 11, 11), rgb(17, 17, 17));
+    color: rgb(172,172,172);
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+.head span{
+  position: relative;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  font-size: 1.1rem;
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.top label {
+  cursor: pointer;
+  margin-top: 0.25rem;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+.top label:after {
+  content: '';
+  position: absolute;
+  top: 1.25px;
+  left: 1.25px;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 22.5px;
+  transition: 0.3s;
+}
+
+
+
+#osc1 .top input:checked + label {
+  background: #bada55;
+}
+
+#osc1 .top input:checked + label:after {
+  left: calc(100% - 1.25px);
+  transform: translateX(-100%);
+}
+
+#osc1 .top label:active:after {
+  width: 32.5px;
+}
+
+
+#osc2 .top input:checked + label {
+  background: #bada55;
+}
+
+#osc2 .top input:checked + label:after {
+  left: calc(100% - 1.25px);
+  transform: translateX(-100%);
+}
+
+#osc2 .top label:active:after {
+  width: 32.5px;
+}
+
+
+#osc3 .top input:checked + label {
+  background: #bada55;
+}
+
+#osc3 .top input:checked + label:after {
+  left: calc(100% - 1.25px);
+  transform: translateX(-100%);
+}
+
+#osc3 .top label:active:after {
+  width: 32.5px;
+}
+
+
+#osc4 .top input:checked + label {
+  background: #bada55;
+}
+
+#osc4 .top input:checked + label:after {
+  left: calc(100% - 1.25px);
+  transform: translateX(-100%);
+}
+
+#osc4 .top label:active:after {
+  width: 32.5px;
+}
+
+
+
+
+input[type="range"]{
+    -webkit-appearance:none;
+    width:260px;
+    height:20px;
+    background: linear-gradient(to right, #575757 0%, #515151 100%);
+    background-size:250px 10px;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    outline: none;
+  }
+  
+  input[type="range"]:first-of-type{
+    margin-top:30px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:#e7e7e7;
+    position:relative;
+    z-index:3;
+    box-shadow:0 0 5px 0 rgba(0,0,0,0.3);
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:after{
+    content:" ";
+    width:260px;
+    height:10px;
+    z-index:1;
+    right:20px;
+    top:5px;
+    background: #ff5b32;
+    background: linear-gradient(to right, #f088fc 1%, #AC6CFF 70%);
+  }
+
+div.sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 4;
+}
+
+.osc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  background-image: linear-gradient(to bottom , rgb(21, 21, 21), rgb(26, 26, 26));
+
+  list-style-type: none;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+li.head {
+  display: flex;
+  flex-direction: column;
+}
+
+div.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 5px;
+  border-bottom: black; */
+}
+
+li.slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+h1{
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    color: white;
+}
+
+canvas{
+  position: absolute;
+}
+
+.screen{
+    /* background-color: rgb(255, 0, 0); */
+    margin: 1rem;
+    width: 50%;
+    /* padding-top: 50%; */
+    overflow:hidden;
+}
+label{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-transform:lowercase;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li.box h1{
+  color: rgb(172,172,172);
+  letter-spacing: 3px;
+  position: relative;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+
+.box select {
+  background-color: rgb(12, 12, 12);;
+  color: white;
+  padding: 12px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+ul.selected{
+  background-image: none;
+  background-color: rgb(37, 37, 37);
+}
+
