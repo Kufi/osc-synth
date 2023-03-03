@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" async defer></script>
+    </head>
+    <body>
+        <div class="sect" id="left">
+            <ul class="osc selected" id="osc1">
+                <li class="head">
+                    <div class="top">
+                        <h1>OSC 1</h1>
+                        <input type="checkbox" id="switch1" />
+                        <label for="switch1">Toggle</label>
+                    </div>
+                    <span>x-axis</span>
+                    
+                </li>
+                <li class="box">
+                    <select name="type" id="type">
+                        <option value="sine">sine</option>
+                        <option value="square">square</option>
+                        <option value="triangle">tri</option>
+                        <option value="sawtooth">saw</option>
+                    </select>
+                    <h1>_</h1>
+                </li>
+                <li class="slider">
+                    
+                    <label for="frequency">Frequency: <span id="frequencyValue">440</span></label>
+                    <input id="frequency" type="range" min="0" max="2400" step="1" value="440">
+                </li>
+                <li class="slider">
+                    <label for="gain">Input Gain: <span id="gainValue">0.5</span></label>
+                    <input id="gain" type="range" min="0" max="1" step="0.01" value="0.5">
+                </li>
+            </ul>
+            <ul class="osc" id="osc2">
+                <li class="head">
+                    <div class="top">
+                        <h1>OSC 2</h1>
+                        <input type="checkbox" id="switch2" />
+                        <label for="switch2">Toggle</label>
+                    </div>
+                    <span>y-axis</span>
+                    
+                </li>
+                <li class="box">
+                    <select name="type" id="type">
+                        <option value="sine">sine</option>
+                        <option value="square">square</option>
+                        <option value="triangle">tri</option>
+                        <option value="sawtooth">saw</option>
+                    </select>
+                    <h1>_</h1>
+                </li>
+                <li class="slider">
+                    
+                    <label for="frequency">Frequency: <span id="frequencyValue">440</span></label>
+                    <input id="frequency" type="range" min="0" max="2400" step="1" value="440">
+                </li>
+                <li class="slider">
+                    <label for="gain">Input Gain: <span id="gainValue">0.5</span></label>
+                    <input id="gain" type="range" min="0" max="1" step="0.01" value="0.5">
+                </li>
+            </ul>
+        </div>
+        <div class="screen">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="sect" id="left">
+            <ul class="osc" id="osc3">
+                
+                <li class="head">
+                    <div class="top">
+                        <h1>OSC 3</h1>
+                        <input type="checkbox" id="switch3" />
+                        <label for="switch3">Toggle</label>
+                    </div>
+                    <span>x-axis</span>
+                    
+                </li>
+                <li class="box">
+                    <select name="type" id="type">
+                        <option value="sine">sine</option>
+                        <option value="square">square</option>
+                        <option value="triangle">tri</option>
+                        <option value="sawtooth">saw</option>
+                    </select>
+                    <h1>_</h1>
+                </li>
+                <li class="slider">
+                    
+                    <label for="frequency">Frequency: <span id="frequencyValue">440</span></label>
+                    <input id="frequency" type="range" min="0" max="2400" step="1" value="440">
+                </li>
+                <li class="slider">
+                    <label for="gain">Input Gain: <span id="gainValue">0.5</span></label>
+                    <input id="gain" type="range" min="0" max="1" step="0.01" value="0.5">
+                </li>
+                
+            </ul>
+            <ul class="osc" id="osc4">
+                <li class="head">
+                    <div class="top">
+                        <h1>OSC 4</h1>
+                        <input type="checkbox" id="switch4" />
+                        <label for="switch4">Toggle</label>
+                    </div>
+                    <span>y-axis</span>
+                    
+                </li>
+                <li class="box">
+                    <select name="type" id="type">
+                        <option value="sine">sine</option>
+                        <option value="square">square</option>
+                        <option value="triangle">tri</option>
+                        <option value="sawtooth">saw</option>
+                    </select>
+                    <h1>_</h1>
+                </li>
+                <li class="slider">
+                    
+                    <label for="frequency">Frequency: <span id="frequencyValue">440</span></label>
+                    <input id="frequency" type="range" min="0" max="2400" step="1" value="440">
+                </li>
+                <li class="slider">
+                    <label for="gain">Input Gain: <span id="gainValue">0.5</span></label>
+                    <input id="gain" type="range" min="0" max="1" step="0.01" value="0.5">
+                </li>
+                
+            </ul>
+        </div>
+    </body>
+</html>
