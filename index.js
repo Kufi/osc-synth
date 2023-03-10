@@ -17,6 +17,7 @@ var frameCount = 0;
 var fps, fpsInterval, startTime, now, then, elapsed;
 
 const screen = document.querySelector('.screen')
+const startText = document.querySelector('#start-text')
 
 
 let isOn = [false, false, false, false];
@@ -409,6 +410,8 @@ for(let i = 0; i < 4; i++) {
     if(this.checked){
       if(!playing) {
         startAnimating(60);
+        startText.classList.remove("visible");
+        startText.classList.add("hidden");
         playing = true;
       }
       createSynth(i);
@@ -425,6 +428,9 @@ for(let i = 0; i < 4; i++) {
       // console.log('ato')
       stopAnimation();
       playing = false;
+      startText.classList.remove("hidden");
+      startText.classList.add("visible");
+        
       
       //need to stop animation for it to work
     }
@@ -470,9 +476,10 @@ for(let i = 0; i < 4; i++) {
 
 
 
+//body.style.height = window.offsetHeight + "px";
 
-canvas.width = screen.offsetWidth
-canvas.height = screen.offsetHeight
+canvas.style.width = screen.offsetWidth + "px";
+canvas.style.height = screen.offsetHeight + "px";
 pixelRatio = window.devicePixelRatio;
 sizeOnScreen = canvas.getBoundingClientRect();
 canvas.width = sizeOnScreen.width * pixelRatio;
